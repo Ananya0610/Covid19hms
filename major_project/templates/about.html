@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hospital Management | About Us</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+     integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+    integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet"  href="{% static 'css/master.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <nav class="nav nav_top">
+      <div class="logo">
+          <a href="{% url 'home' %}"><img src="{% static "images/CovidLogo.jpeg" %}" width="150"></a>
+      </div>
+      <div class="nav_side">
+         <a href="{% url 'about'%} ">About Us</a>
+          <a href="{% url 'contact' %}">Contact us</a>
+      </div>
+    </nav>
+    <div class="about_us">
+    <h1>About Us</h1>
+    <div class="about_content">
+      <p>WELCOME TO Covid-19 HOSPITAL MANAGEMENT SYSTEM!<br>
+           The place to find the best doctors and facilities for Covid patients. We thoroughly check the quality of our goods, working only with reliable doctors so
+           that you only receive the best quality facilities and treatments.
+
+           We believe in high quality treatment and exceptional patient service.
+      </p>
+  </div>
+<hr>
+  <h1>Our Mission</h1>
+  <p>During the pandemic situation it is very typical to maintain overall data, so we are trying to develop a little bit solution for this.
+    Our missiion is to provide our covid patients with high quality yet budget-friendly treatment. We offer all of this while providing excellent facilities
+      and friendly support.
+      We always keep an eye on the latest trends and put our customers’ wishes first. That is why we have satisfied customers all over the world, and are thrilled
+       to be a part of the this industry.<br>
+      The interests of our customers are always top priority for us, so we hope you will enjoy our products as much as we enjoy making them available to you.
+  </p>
+  <h1>Our Vision</h1>
+  <p>Our Vision lies to bring in a best services and facilities as per our patients need<br> with Great price and Discounts.
+      <br><br>
+      ”Spend Less,Live Better"
+  </p>
+    </div>
+
+    <footer>
+      <div class="footer_logo">
+          <a href="{% url 'home' %}"><img src="{% static "images/CovidLogo.jpeg" %}" width="150"></a>
+      </div>
+      <div class="pages">
+          <h3>Pages</h3>
+
+          <a href="{% url 'about'%} ">About Us</a>
+          <a href="{% url 'contact' %}">Contact us</a>
+
+      </div>
+      <div class="contact">
+          <h3>Contact Us</h3>
+          <a href="https://api.WhatsApp.com/send?phone=+919838623258" target=_black><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="tel:+919838723258"><i class="fa fa-phone" aria-hidden="true"></i></a>
+          <a href="mailto: support@abcd.ai"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+      <hr>
+      <p>Copyright &copy; 2022 Covid-19 Hospital Management System</p>
+  </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="
+  sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="
+  sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+  </body>
+</html>

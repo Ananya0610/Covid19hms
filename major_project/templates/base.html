@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+     <title> Hospital Management</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+
+        <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"  href="{% static "css/master.css" %}">
+</head>
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="#"><img src="{% static "images/CovidLogo.jpeg" %}" width="150"></a>
+        </div>
+        <div class="nav_side">
+
+            <a href="{% url 'about'%} ">About Us</a> |
+            <a href="{% url 'chms:logout' %}">Logout</a> |
+            <a href="{% url 'contact' %}">Contact us</a>
+        </div>
+    </nav>
+{% block body %}{% endblock body %}
+    <div class="feedback">
+        <h2>Write a review</h2>
+        <div class="feedback_form">
+            <form name="submit-googlesheet">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email Id"><br>
+                <input type="number" name="Number" placeholder="Contact Number"><br>
+                <textarea rows="5" cols="7"name="Review"  placeholder="Write a review"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+<footer>
+    <div class="footer_logo">
+    </div>
+    <div class="pages">
+        <h3>Pages</h3>
+        <a href="about.html">About Us</a>
+        <a href="{% url 'contact' %}">Contact Us</a>
+
+    </div>
+    <hr>
+    <p>Copyright &copy; Covid-19 Hospital Mangement </p>
+</footer>
+
+     {% block body %}{% endblock body %}
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="
+sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="
+sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font: poppins;
+    width: 100%;
+}
+
+.nav{
+    background-color: rgb(8, 84, 172);
+    z-index: 9;
+    padding:10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+
+.nav_top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.logo{
+    float: left;
+    width: 60%;
+}
+.logo img{
+    padding: 10px;
+}
+
+.nav_side{
+    float: right;
+
+
+}
+
+.nav_side a{
+    float: left;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+.nav_side a:hover{
+    color: orange;
+    transition: all Is ease;
+}
+.subnav {
+    float: right;
+    overflow: hidden;
+
+  }
+
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: sans-serif;
+    margin: 0;
+  }
+
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(16, 108, 228);
+  }
+
+  .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #0461b2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+
+  }
+
+  .subnav-content a {
+    float: right;
+
+
+    color: black;
+    text-decoration: none;
+  }
+
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+  footer{
+      background-color: rgb(8, 84, 172);
+      padding: 50px;
+      position: sticky;
+  }
+
+  footer .footer_logo img{
+      background-color: #99A3A4;
+  }
+
+  footer .pages{
+      text-align: center;
+  }
+
+  footer .pages h3{
+      color: black;
+      font-size: 20px;
+      font-family: cosmic, sans-serif;
+      padding: 5px;
+  }
+
+  footer .pages a{
+      text-decoration: none;
+      margin: 10px;
+      color: orange;
+      font-size: 15px;
+      font-family: cosmic, sans-serif;
+  }
+
+  footer .pages a:hover{
+      color: white;
+  }
+
+  footer .doc{
+      text-align: center;
+  }
+
+  footer .doc h3{
+      color: black;
+      font-size: 20px;
+      font-family: cosmic, sans-serif;
+      padding: 5px;
+  }
+
+  footer .doc a{
+      text-decoration: none;
+      margin: 10px;
+      color: orange;
+      font-size: 15px;
+      font-family: cosmic, sans-serif;
+  }
+
+  footer .doc a:hover{
+      color: white;
+  }
+
+  footer .contact{
+      text-align: center;
+  }
+
+  footer .contact h3{
+      color: black;
+      font-size: 20px;
+      font-family: cosmic, sans-serif;
+      padding: 5px;
+  }
+
+  footer .contact a{
+      text-decoration: none;
+       font-size: 30px;
+       color: orange;
+       margin: 10px;
+  }
+
+  footer .contact a:hover{
+      color: black;
+  }
+
+  footer p{
+      color: black;
+      text-align: center;
+  }

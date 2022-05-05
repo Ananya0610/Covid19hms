@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/ds.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img style="width: 40px;" src="recycling.png" alt="">
+                <span class="logoname"></span>
+            </div>
+            <div class="navitem">
+
+            </div>
+        </div>
+
+        <div class="container-body">
+            <div class="sidebar">
+                <ul>
+                    <li class="dashboard">
+                        <i class="fa fa-dashcube"></i>
+                        <a href="{% url 'chms:admin_dashboard' %}">Admin Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-book"></i>
+                        <a href="{% url 'chms:patient_list' %}">Patients List</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-book"></i>
+                        <a href="{% url 'chms:doctor_list' %}">Doctors List</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-question-circle"></i>
+                        <a href="{% url 'chms:logout' %}">Logout</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="main-body">
+
+              <div class="lang">
+              <h1>WELCOME! Hello, {{ user.username|default:'Guest' }}!</h1>
+            </div>
+                <div class="cards">
+                    <div class="row row-1">
+                        <div class="col">
+                            <div
+                            </div>
+                        </div>
+
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+                            <div
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-2">
+                        <div class="col">
+                            <div class="total-invoice">
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="paid-invoice">
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="unpaid-invoice">
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="invoice-sent">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

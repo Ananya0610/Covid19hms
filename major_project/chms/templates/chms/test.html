@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+
+     <title>Hospital Management</title>
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+     <!-- Optional theme -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+     integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+     <link rel="stylesheet"  href="{% static 'css/ds.css' %}">
+     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div class="product">
+            <h1> You are logged in now!</h1>
+            <div class= "product_container">
+
+        <div class="item">
+           <div class="item_img">
+               <img src="{% static 'images/patientpic.jpeg' %}">
+           </div>
+        <div div class="item_content">
+            <p></p>
+            <a href="{% url 'chms:patient_dashboard' %}">Patient </a>
+        </div>
+        </div>
+
+        <div class="item">
+            <div class="item_img">
+                <img src="{% static 'images/doctorpic.jfif' %}">
+            </div>
+         <div div class="item_content">
+             <p></p>
+             <a href="{% url 'chms:doctor_dashboard' %}">Doctor</a>
+         </div>
+         </div>
+
+         <div class="item">
+             <div class="item_img">
+                 <img src="{% static 'images/admin.jpg' %}">
+             </div>
+          <div div class="item_content">
+              <p></p>
+              <a href="{% url 'chms:admin_dashboard' %}">Admin</a>
+          </div>
+          </div>
+</body>
+</html>
